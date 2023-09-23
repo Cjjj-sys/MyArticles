@@ -1,0 +1,158 @@
+<html><head><style type="text/css">pre { margin: 1px }
+			.fmt0 {  } /* normal */
+			.fmt1 {  } /* background */
+			.fmt2 { background-color: #ffcabf; } /* line:error */
+			.fmt3 { background-color: #fffbbf; } /* line:warning */
+			.fmt4 { background-color: #bfd6ff; } /* line:badbox */
+			.fmt5 {  } /* line:bookmark */
+			.fmt6 {  } /* line:bookmark0 */
+			.fmt7 {  } /* line:bookmark1 */
+			.fmt8 {  } /* line:bookmark2 */
+			.fmt9 {  } /* line:bookmark3 */
+			.fmt10 {  } /* line:bookmark4 */
+			.fmt11 {  } /* line:bookmark5 */
+			.fmt12 {  } /* line:bookmark6 */
+			.fmt13 {  } /* line:bookmark7 */
+			.fmt14 {  } /* line:bookmark8 */
+			.fmt15 {  } /* line:bookmark9 */
+			.fmt16 { color: #555580; } /* magicComment */
+			.fmt17 { background-color: #a8cf83; } /* commentTodo */
+			.fmt18 { color: #808080; } /* comment */
+			.fmt19 { color: #800000; } /* keyword */
+			.fmt20 { font-weight: 8200;color: #0095ff; } /* extra-keyword */
+			.fmt21 { color: #808000; } /* math-keyword */
+			.fmt22 { border-bottom: 1px solid #0000ff;color: #0000ff; } /* link */
+			.fmt23 { font-weight: 8200;color: #0055ff; } /* align-ampersand */
+			.fmt24 { color: #008080; } /* verbatim */
+			.fmt25 { color: #800000; } /* sweave-block */
+			.fmt26 { font-weight: 8200;color: #0095ff; } /* sweave-delimiter */
+			.fmt27 { color: #800000; } /* pweave-block */
+			.fmt28 { font-weight: 8200;color: #0095ff; } /* pweave-delimiter */
+			.fmt29 { color: #804000; } /* picture */
+			.fmt30 { color: #c06000; } /* picture-keyword */
+			.fmt31 { font-weight: 8200;background-color: #ffff7f; } /* braceMatch */
+			.fmt32 { font-weight: 8200;color: #ffff7f;background-color: #c00000; } /* braceMismatch */
+			.fmt33 { color: #000000;background-color: #ffef0b; } /* search */
+			.fmt34 { color: #008000; } /* numbers */
+			.fmt35 { color: #509600; } /* math-delimiter */
+			.fmt36 { color: #202000; } /* math-text */
+			.fmt37 { color: #ff0000; } /* text */
+			.fmt38 { color: #ff0088; } /* escapeseq */
+			.fmt39 { border-bottom: 1px dashed #ff0000; } /* spellingMistake */
+			.fmt40 { border-bottom: 1px dashed #008000; } /* wordRepetition */
+			.fmt41 { border-bottom: 1px dashed #008000; } /* wordRepetitionLongRange */
+			.fmt42 { text-decoration: line-through; } /* badWord */
+			.fmt43 { border-bottom: 1px dashed #000080; } /* grammarMistake */
+			.fmt44 { background-color: #00ffa0; } /* grammarMistakeSpecial1 */
+			.fmt45 { background-color: #00c0ff; } /* grammarMistakeSpecial2 */
+			.fmt46 { background-color: #00ff00; } /* grammarMistakeSpecial3 */
+			.fmt47 { background-color: #c8ff61; } /* grammarMistakeSpecial4 */
+			.fmt48 { background-color: #ffbf9f; } /* latexSyntaxMistake */
+			.fmt49 { font-style: italic;color: #0000ff; } /* temporaryCodeCompletion */
+			.fmt50 { color: #000080; } /* environment */
+			.fmt51 { color: #008000; } /* referencePresent */
+			.fmt52 { border-bottom: 1px dashed #008000;color: #008000; } /* referenceMissing */
+			.fmt53 { border-bottom: 1px dashed #800080;color: #800080; } /* referenceMultiple */
+			.fmt54 { color: #008000; } /* citationPresent */
+			.fmt55 { border-bottom: 1px dashed #008000;color: #008000; } /* citationMissing */
+			.fmt56 { color: #008000; } /* packagePresent */
+			.fmt57 { border-bottom: 1px dashed #008000;color: #008000; } /* packageMissing */
+			.fmt58 { font-weight: 8200;color: #000000; } /* structure */
+			.fmt59 { background-color: #eeeeff; } /* current */
+			.fmt60 { background-color: #b2d8ff; } /* selection */
+			.fmt61 { background-color: #ffaaaa; } /* replacement */
+			.fmt62 { text-decoration: line-through;background-color: #ffaaaa; } /* diffDelete */
+			.fmt63 { background-color: #aaffaa; } /* diffAdd */
+			.fmt64 { background-color: #ffff50; } /* diffReplace */
+			.fmt65 { background-color: #ddffcc; } /* previewSelection */
+			.fmt66 { font-weight: 8200;color: #0095ff; } /* txs-test */
+			.fmt67 { font-weight: 8200; } /* txs-test-summary */
+			.fmt68 { color: #008000; } /* txs-test-pass */
+			.fmt69 { color: #c00000; } /* txs-test-fail */
+			.fmt70 { color: #ea8800; } /* txs-test-warn */
+			.fmt71 { color: #808000; } /* txs-test-qdebug */
+			.fmt72 { color: #ffa500; } /* dtx:guard */
+			.fmt73 { font-weight: 8200;color: #006400; } /* dtx:macro */
+			.fmt74 { color: #008080; } /* dtx:verbatim */
+			.fmt75 { color: #cc8100; } /* dtx:specialchar */
+			.fmt76 { font-weight: 8200;color: #10c010; } /* dtx:commands */
+			.fmt77 { color: #b200ff; } /* lua:keyword */
+			.fmt78 { color: #808080; } /* lua:comment */
+			.fmt79 { color: #804000; } /* asymptote:block */
+			.fmt80 { color: #800080; } /* asymptote:keyword */
+			.fmt81 { color: #808000; } /* asymptote:type */
+			.fmt82 { color: #008000; } /* asymptote:numbers */
+			.fmt83 { color: #000080; } /* asymptote:string */
+			.fmt84 { color: #808080; } /* asymptote:comment */
+			.fmt85 { color: #808080; } /* qtscript:comment */
+			.fmt86 { color: #008000; } /* qtscript:string */
+			.fmt87 { color: #000080; } /* qtscript:number */
+			.fmt88 { color: #808000; } /* qtscript:keyword */
+			.fmt89 { color: #800000; } /* qtscript:txs-variable */
+			.fmt90 { font-style: italic; } /* qtscript:txs-function */
+			.fmt91 { background-color: #ffff7f; } /* preedit */
+		</style></head><body><pre><span class="fmt19">\documentclass</span>[8px,a4paper]{<span class="fmt56">article</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>[UTF8]{<span class="fmt56">ctex</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>[T1]{<span class="fmt56">fontenc</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>[left=5mm, right=5mm, top=5mm, bottom=5mm]{<span class="fmt56">geometry</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>[version=4]{<span class="fmt56">mhchem</span>} </pre>
+		<pre><span class="fmt19">\usepackage</span>{<span class="fmt56">chemfig</span>} </pre>
+		<pre><span class="fmt19">\newcommand</span>*{<span class="fmt19">\nl</span>}{<span class="fmt19">\indent\indent</span>} </pre>
+		<pre><span class="fmt19">\title</span>{物质的溶解性} </pre>
+		<pre><span class="fmt19">\author</span>{[n-KaN-f]} </pre>
+		<pre><span class="fmt20">\begin{</span><span class="fmt20"><span class="fmt50">document</span></span><span class="fmt20">}</span> </pre>
+		<pre>	<span class="fmt20">\section</span>{<span class="fmt58">物质的溶解性</span>} </pre>
+		<pre>	记少不记多 </pre>
+		<pre>	<span class="fmt20">\subsection</span>{<span class="fmt19"><span class="fmt58">\ce</span></span><span class="fmt58"><span class="fmt34">{</span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">K+,</span></span></span><span class="fmt58"><span class="fmt34"> </span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">Na+,</span></span></span><span class="fmt58"><span class="fmt34"> </span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">NH4+,</span></span></span><span class="fmt58"><span class="fmt34"> </span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">NO3-</span></span></span><span class="fmt58"><span class="fmt34"> </span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">,HCO3-</span></span></span><span class="fmt58"><span class="fmt34"> </span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">,HSO3-</span></span></span><span class="fmt58"><span class="fmt34"> </span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">,CH3COO-</span></span></span><span class="fmt58"><span class="fmt34">}</span></span><span class="fmt58">对应的物质基本上都</span><span class="fmt58">溶于水</span>} </pre>
+		<pre>	例外: <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34">CoC2O4</span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt34">v</span></span><span class="fmt34">}</span> ( <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34">C2O4^2-</span></span><span class="fmt34">}</span>定向沉 <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34"><span class="fmt34">CO^2+</span></span></span><span class="fmt34">}</span> ) </pre>
+		<pre>	 </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\emph</span>{补充: <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34">CO3^2-</span></span><span class="fmt34">}</span>沉 <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"> </span><span class="fmt34"><span class="fmt34">Li+,</span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt34">Ni^2+</span></span><span class="fmt34">}</span>; } </pre>
+		<pre>	 </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\emph</span>{补充: <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34">SO4^2-</span></span><span class="fmt34">}</span>沉 <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"> </span><span class="fmt34"><span class="fmt34">Pb^2+</span></span><span class="fmt34">}</span>; <span class="fmt19">\ce</span><span class="fmt34">{(</span><span class="fmt34"><span class="fmt34">CH3COO</span></span><span class="fmt34">)</span><span class="fmt34"><span class="fmt34">2Pb</span></span><span class="fmt34">}</span> 溶于水，弱电解质。} </pre>
+		<pre>	 </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\emph</span>{补充: 为什么 <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34">C2O4^2-</span></span><span class="fmt34">}</span> 的盐大多易溶于水？} </pre>
+		<pre>	 </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\chemfig</span>{C(=[2,0.7]O)(-[0,0.7]C(=[2,0.7]O)(-[7,0.7]C))(-[5, 0.7]C)} </pre>
+		<pre>	<span class="fmt19">\ce</span><span class="fmt34">{&lt;</span><span class="fmt34"><span class="fmt34">-</span></span><span class="fmt34">}</span> 草酸的结构，羧基容易与金属阳离子形成配位键，故易溶于水；且构成五元环的螯合物，很稳定。 </pre>
+		<pre>	<span class="fmt20">\subsection</span>{<span class="fmt58">氯化物</span><span class="fmt58"> </span><span class="fmt19"><span class="fmt58">\ce</span></span><span class="fmt58"><span class="fmt34">{</span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">Cl-</span></span></span><span class="fmt58"><span class="fmt34">}</span></span><span class="fmt58"> </span><span class="fmt58">除</span><span class="fmt58"> </span><span class="fmt19"><span class="fmt58">\ce</span></span><span class="fmt58"><span class="fmt34">{</span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">Ag+,</span></span></span><span class="fmt58"><span class="fmt34"> </span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">Cu+</span></span></span><span class="fmt58"><span class="fmt34">}</span></span><span class="fmt19"><span class="fmt58">\emph</span></span><span class="fmt58">{(亚铜离子)}</span><span class="fmt58"> </span><span class="fmt58">之外，全部溶于水</span>} </pre>
+		<pre>	氯化物三大性质:  </pre>
+		<pre>	 </pre>
+		<pre>	 </pre>
+		<pre>	1. 除了 IA, IIA, 绝大多数为共价化合物。(IIA中的<span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34">BeCl2</span></span><span class="fmt34">}</span>也是共价化合物) </pre>
+		<pre>	 </pre>
+		<pre>	 </pre>
+		<pre>	2. 熔沸点低，易升华，易堵塞导管(解决方法为换粗导管)。 </pre>
+		<pre>	 </pre>
+		<pre>	 </pre>
+		<pre>	3. 易水解，需左右隔水。 </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\indent\indent</span> <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34"><span class="fmt34">SOCl2</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">-</span></span></span><span class="fmt34"><span class="fmt34">></span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">T</span></span></span><span class="fmt34"><span class="fmt34">[</span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">水</span></span></span><span class="fmt34"><span class="fmt34">]</span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">H2SO3</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">+</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">HCl</span></span></span><span class="fmt34">}</span> </pre>
+		<pre>	<span class="fmt19">\indent\indent</span> <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34"><span class="fmt34">POCl3</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">-</span></span></span><span class="fmt34"><span class="fmt34">></span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">T</span></span></span><span class="fmt34"><span class="fmt34">[</span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">水</span></span></span><span class="fmt34"><span class="fmt34">]</span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">H3PO4</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">+</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">HCl</span></span></span><span class="fmt34">}</span> </pre>
+		<pre>	<span class="fmt19">\indent\indent</span> <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34"><span class="fmt34">TiOCl2</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">-</span></span></span><span class="fmt34"><span class="fmt34">></span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">T</span></span></span><span class="fmt34"><span class="fmt34">[</span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">水</span></span></span><span class="fmt34"><span class="fmt34">]</span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">TiOOH</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">+</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">HCl</span></span></span><span class="fmt34">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	 </pre>
+		<pre>	实验应用： </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\nl</span> <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34">CuCl2</span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt34">-</span></span><span class="fmt34">></span><span class="fmt34"><span class="fmt34">T</span></span><span class="fmt34">[</span><span class="fmt34"><span class="fmt34">一直加热</span></span><span class="fmt34">]</span><span class="fmt34"> </span><span class="fmt34"><span class="fmt34">Cu</span></span><span class="fmt34">(</span><span class="fmt34"><span class="fmt34">OH</span></span><span class="fmt34">)</span><span class="fmt34"><span class="fmt34">2</span></span><span class="fmt34"> </span><span class="fmt34"><span class="fmt34">-</span></span><span class="fmt34">></span><span class="fmt34"><span class="fmt34">T</span></span><span class="fmt34">[</span><span class="fmt34"><span class="fmt34">煅烧</span></span><span class="fmt34">]</span><span class="fmt34"> </span><span class="fmt34"><span class="fmt34">CuO</span></span><span class="fmt34">}</span> <span class="fmt19">\emph</span>{氯化物易水解，所以在加热的过程中<span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34">CuCl2</span></span><span class="fmt34">}</span>水解程度加大，最终变成<span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34"><span class="fmt34">Cu</span></span></span><span class="fmt34"><span class="fmt34">(</span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">OH</span></span></span><span class="fmt34"><span class="fmt34">)</span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">2</span></span></span><span class="fmt34">}</span>} </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\nl</span> 配制<span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34">FeCl3</span></span><span class="fmt34">}</span>，溶于浓盐酸(防水解), <span class="fmt19">\emph</span>{<span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34">SOCl2</span></span><span class="fmt34">}</span>也能防水解(除水)} </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\nl</span> <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34"><span class="fmt34">MgCl2*6H2O</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">-</span></span></span><span class="fmt34"><span class="fmt34">></span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">T</span></span></span><span class="fmt34"><span class="fmt34">[</span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">在HCl的氛围里加热脱水</span></span></span><span class="fmt34"><span class="fmt34">]</span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">MgCl2</span></span></span><span class="fmt34">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\emph</span>{补充：} </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\nl</span> <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34">CaCl2</span></span><span class="fmt34">}</span> 不能干燥 <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34"><span class="fmt34">CH3CH2OH,</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">NH3,</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">SO3</span></span></span><span class="fmt34">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\nl</span> <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34"><span class="fmt34">CaCl2</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">+</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">2NH3</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">-</span></span></span><span class="fmt34"><span class="fmt34">></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">CaCl2*2NH3</span></span></span><span class="fmt34">}</span> </pre>
+		<pre>	<span class="fmt19">\nl</span> <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34"><span class="fmt34">CaCl2</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">+</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">2CH3CH2OH</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">-</span></span></span><span class="fmt34"><span class="fmt34">></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">CaCl2*2CH3CH2OH</span></span></span><span class="fmt34">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt19">\nl</span> <span class="fmt19">\ce</span><span class="fmt34">{</span><span class="fmt34"><span class="fmt34"><span class="fmt34">CaCl2</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">+</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">SO3</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">-</span></span></span><span class="fmt34"><span class="fmt34">></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">CaSO4</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">v</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">+</span></span></span><span class="fmt34"><span class="fmt34"> </span></span><span class="fmt34"><span class="fmt34"><span class="fmt34">HCl</span></span></span><span class="fmt34">}</span> </pre>
+		<pre>	 </pre>
+		<pre>	 </pre>
+		<pre>	<span class="fmt20">\subsection</span>{<span class="fmt19"><span class="fmt58">\ce</span></span><span class="fmt58"><span class="fmt34">{</span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">SO4^2-</span></span></span><span class="fmt58"><span class="fmt34">}</span></span><span class="fmt58"> </span><span class="fmt58">除</span><span class="fmt58"> </span><span class="fmt58">(</span><span class="fmt19"><span class="fmt58">\ce</span></span><span class="fmt58"><span class="fmt34">{</span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">Ba2+,</span></span></span><span class="fmt58"><span class="fmt34"> </span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">Pb2+,</span></span></span><span class="fmt58"><span class="fmt34"> </span></span><span class="fmt58"><span class="fmt34">}</span></span><span class="fmt58">)(</span><span class="fmt19"><span class="fmt58">\emph</span></span><span class="fmt58">{不溶})</span><span class="fmt58"> </span><span class="fmt58">和</span><span class="fmt58"> </span><span class="fmt58">(</span><span class="fmt19"><span class="fmt58">\ce</span></span><span class="fmt58"><span class="fmt34">{</span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">Ag+,</span></span></span><span class="fmt58"><span class="fmt34"> </span></span><span class="fmt58"><span class="fmt34"><span class="fmt34">Ca2+</span></span></span><span class="fmt58"><span class="fmt34">}</span></span><span class="fmt58">)(</span><span class="fmt19"><span class="fmt58">\emph</span></span><span class="fmt58">{微溶})</span><span class="fmt58"> </span><span class="fmt58">之外都溶于水</span>} </pre>
+		<pre><span class="fmt20">\end{</span><span class="fmt20"><span class="fmt50">document</span></span><span class="fmt20">}</span> </pre></body></html>

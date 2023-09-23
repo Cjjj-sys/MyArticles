@@ -1,0 +1,68 @@
+\documentclass[8px,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage[T1]{fontenc}
+\usepackage[left=5mm, right=5mm, top=5mm, bottom=5mm]{geometry}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+\newcommand*{\nl}{\indent\indent}
+\title{物质的溶解性}
+\author{[n-KaN-f]}
+\newbox\bwk\edef\tempd#1pt{#1\string p\string t}\tempd\def\nbextr#1pt{#1}
+\def\npts#1{\expandafter\nbextr\the#1\space}
+\def\ttwplink#1#2{\special{ps:1 0 0 setrgbcolor}#2\special{ps:0 0 0 setrgbcolor}\setbox\bwk=\hbox{#2}\special{ps:( linkto #1)\space\npts{\wd\bwk} \npts{\dp\bwk} -\npts{\ht\bwk} true\space Cpos}}
+\begin{document}
+	\section{物质的溶解性}
+	记少不记多
+	\subsection{\ce{K+, Na+, NH4+, NO3- ,HCO3- ,HSO3- ,CH3COO-}对应的物质基本上都溶于水}
+	例外: \ce{CoC2O4 v} ( \ce{C2O4^2-}定向沉 \ce{CO^2+} )
+	
+	
+	\emph{补充: \ce{CO3^2-}沉 \ce{ Li+, Ni^2+}; }
+	
+	
+	\emph{补充: \ce{SO4^2-}沉 \ce{ Pb^2+}; \ce{(CH3COO)2Pb} 溶于水，弱电解质。}
+	
+	
+	\emph{补充: 为什么 \ce{C2O4^2-} 的盐大多易溶于水？}
+	
+	
+	\chemfig{C(=[2,0.7]O)(-[0,0.7]C(=[2,0.7]O)(-[7,0.7]C))(-[5, 0.7]C)}
+	\ce{<-} 草酸的结构，羧基容易与金属阳离子形成配位键，故易溶于水；且构成五元环的螯合物，很稳定。
+	\subsection{氯化物 \ce{Cl-} 除 \ce{Ag+, Cu+}\emph{(亚铜离子)} 之外，全部溶于水}
+	氯化物三大性质: 
+	
+	
+	1. 除了 IA, IIA, 绝大多数为共价化合物。(IIA中的\ce{BeCl2}也是共价化合物)
+	
+	
+	2. 熔沸点低，易升华，易堵塞导管(解决方法为换粗导管)。
+	
+	
+	3. 易水解，需左右隔水。
+	
+	\indent\indent \ce{SOCl2 ->T[水] H2SO3 + HCl}
+	\indent\indent \ce{POCl3 ->T[水] H3PO4 + HCl}
+	\indent\indent \ce{TiOCl2 ->T[水] TiOOH + HCl}
+	
+	
+	实验应用：
+	
+	\nl \ce{CuCl2 ->T[一直加热] Cu(OH)2 ->T[煅烧] CuO} \emph{氯化物易水解，所以在加热的过程中\ce{CuCl2}水解程度加大，最终变成\ce{Cu(OH)2}}
+	
+	\nl 配制\ce{FeCl3}，溶于浓盐酸(防水解), \emph{\ce{SOCl2}也能防水解(除水)}
+	
+	\nl \ce{MgCl2*6H2O ->T[在HCl的氛围里加热脱水] MgCl2}
+	
+	
+	\emph{补充：}
+	
+	\nl \ce{CaCl2} 不能干燥 \ce{CH3CH2OH, NH3, SO3}
+	
+	\nl \ce{CaCl2 + 2NH3 -> CaCl2*2NH3}
+	\nl \ce{CaCl2 + 2CH3CH2OH -> CaCl2*2CH3CH2OH}
+	
+	\nl \ce{CaCl2 + SO3 -> CaSO4 v + HCl}
+	
+	
+	\subsection{\ce{SO4^2-} 除 (\ce{Ba2+, Pb2+, })(\emph{不溶}) 和 (\ce{Ag+, Ca2+})(\emph{微溶}) 之外都溶于水}
+\end{document}
