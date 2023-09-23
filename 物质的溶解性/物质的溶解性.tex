@@ -4,6 +4,8 @@
 \usepackage[left=5mm, right=5mm, top=5mm, bottom=5mm]{geometry}
 \usepackage[version=4]{mhchem}
 \usepackage{chemfig}
+\newcommand*{\ncn}[2]{\nl \ce{#1} #2}
+\newcommand*{\nc}[1]{\nl \ce{#1}}
 \newcommand*{\nl}{\indent\indent}
 \title{物质的溶解性}
 \author{[n-KaN-f]}
@@ -65,5 +67,12 @@
 	\emph{补充：微溶表示除不尽，之后的流程需要再除一次，但前面过滤的滤渣需考虑微溶。}
 	
 	
+	补充：硫酸盐=X矾
 	
+	\nl \ce{FeSO4*7H2O} 绿矾; \ncn{CuSO4*5H2O}{胆矾}; \ncn{KAl(SO4)2*12H2O}{明矾};
+	
+	\ncn{Na2SO4*10H2O}{芒硝(一种泻药)}; \ncn{ZnSO4*7H2O}{皓矾};
+	
+	
+	补充：生石膏(打石膏默认) \ce{CaSO4*2H2O}; 熟石膏 \ce{CaSO4*0.5H2O}
 \end{document}
